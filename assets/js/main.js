@@ -1,23 +1,43 @@
-/*=============== SHOW SIDEBAR ===============*/
-const navMenu = document.getElementById("sidebar"),
-  navToggle = document.getElementById("nav-toggle"),
-  navClose = document.getElementById("nav-close");
+document.addEventListener("DOMContentLoaded", function () {
+  var header = document.querySelector(".start-style");
 
-/*===== SIDEBAR SHOW =====*/
-/* Validate If Constant Exists */
-if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    navMenu.classList.add("show-sidebar");
-  });
-}
+  window.addEventListener("scroll", function () {
+    var scroll = window.scrollY || document.documentElement.scrollTop;
 
-/*===== SIDEBAR HIDDEN =====*/
-/* Validate If Constant Exists */
-if (navClose) {
-  navClose.addEventListener("click", () => {
-    navMenu.classList.remove("show-sidebar");
+    if (scroll >= 10) {
+      header.classList.remove("start-style");
+      header.classList.add("scroll-on");
+    } else {
+      header.classList.remove("scroll-on");
+      header.classList.add("start-style");
+    }
   });
-}
+
+  // Navbar Toggler
+  var navbarToggler = document.querySelector(".navbar-toggler");
+  var navbarCollapse = document.querySelector(".navbar-collapse");
+
+  if (navbarToggler && navbarCollapse) {
+    navbarToggler.addEventListener("click", function () {
+      navbarCollapse.classList.toggle("show");
+    });
+  }
+
+  // Menu On Hover
+  var navItems = document.querySelectorAll(".nav-item");
+
+  if (window.innerWidth > 750) {
+    navItems.forEach(function (navItem) {
+      navItem.addEventListener("mouseenter", function () {
+        navItem.classList.add("show");
+      });
+
+      navItem.addEventListener("mouseleave", function () {
+        navItem.classList.remove("show");
+      });
+    });
+  }
+});
 
 /*=============== SKILLS TABS ===============*/
 const tabs = document.querySelectorAll("[data-target]"),
