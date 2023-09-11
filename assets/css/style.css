@@ -930,6 +930,10 @@ section:nth-child(even) {
 }
 
 /*===== Contact Section =====*/
+.contact.section {
+  background-color: #F8F6F4;
+}
+
 .contact__container {
   grid-template-columns: 300px 340px;
   column-gap: 3rem;
