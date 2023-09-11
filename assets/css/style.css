@@ -931,7 +931,7 @@ section:nth-child(even) {
 
 /*=============== FOOTER ===============*/
 .footer {
-  background-color: #000;
+  background-color: #151414;
   color: #8a8a8a;
   font-size: 14px;
   padding: 4rem;
@@ -993,7 +993,7 @@ ul {
 
 .footer-cta {
   padding-bottom: 3rem;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #373636;
 }
 
 .contactus-row {
@@ -1022,7 +1022,7 @@ ul {
 }
 
 .cta-text span {
-  color: #fff;
+  color: #757575;
   font-size: 15px;
 }
 
@@ -1065,7 +1065,7 @@ ul {
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-  color: #fff;
+  color: #7e7e7e;
   line-height: 28px;
 }
 
@@ -1135,7 +1135,7 @@ ul {
 }
 
 .footer-widget ul li a {
-  color: #fff;
+  color: #878787;
   text-transform: capitalize;
 }
 
@@ -1169,7 +1169,7 @@ ul {
 
 .copyright-area {
   align-content: center;
-  background: #000;
+  background: #202020;
   padding: 25px 0;
   margin-top: 4rem;
 }
@@ -1183,7 +1183,7 @@ ul {
 .copyright-text p {
   margin: 0;
   font-size: 14px;
-  color: #fff;
+  color: #878787;
 }
 
 .copyright-text p a {
