@@ -11,7 +11,7 @@
   --title-color: black;
   --text-color: #333;
   --body-color: #fff;
-  --box-color: ;
+  --box-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
 
