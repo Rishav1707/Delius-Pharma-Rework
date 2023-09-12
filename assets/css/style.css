@@ -153,6 +153,28 @@ section:nth-child(even) {
   color: var(--skin-color);
 }
 
+/*============== Preloader GIF  ================*/
+
+#loading-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+#loading-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.main {
+  display: none;
+}
+
+
 /* #Navigation
 ================================================== */
 
@@ -309,58 +331,6 @@ section:nth-child(even) {
 .nav-item {
   position: relative;
   transition: all 200ms linear;
-}
-
-.nav-item .dropdown-menu {
-  transform: translate3d(0, 10px, 0);
-  visibility: hidden;
-  opacity: 0;
-  max-height: 0;
-  /* display: block; */
-  padding: 0;
-  margin: 0;
-  transition: all 200ms linear;
-}
-
-.nav-item.show .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  max-height: 999px;
-  transform: translate3d(0, 0px, 0);
-}
-
-.dropdown-menu {
-  padding: 10px !important;
-  margin: 0;
-  font-size: 13px;
-  letter-spacing: 1px;
-  color: #212121;
-  background-color: #fcfaff;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
-  transition: all 200ms linear;
-}
-
-.dropdown-menu {
-  display: none;
-}
-
-.dropdown-toggle::after {
-  display: none;
-}
-
-.dropdown-item {
-  padding: 3px 15px;
-  color: #212121;
-  border-radius: 2px;
-  transition: all 200ms linear;
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus {
-  color: #fff;
-  background-color: rgba(6, 155, 11, 0.6);
 }
 
 /*===== Home Section =====*/
@@ -930,6 +900,11 @@ section:nth-child(even) {
 }
 
 /*===== Contact Section =====*/
+
+.contact {
+  padding-bottom: 6.5rem;
+}
+
 .contact.section {
   background-color: #F8F6F4;
 }
@@ -992,6 +967,7 @@ section:nth-child(even) {
 .contact__button:hover .contact__button-icon {
   transform: translateX(.25rem);
 }
+
 .name__container,
 .email__container,
 .phone__container,
@@ -1019,6 +995,7 @@ section:nth-child(even) {
   border-radius: .50rem;
   transition: .3s;
 }
+
 textarea.name,
 textarea.email,
 textarea.phone,
@@ -1061,7 +1038,7 @@ textarea.input {
 .email__container,
 .phone__container,
 .message__container,
-.input__container span{
+.input__container span {
   position: absolute;
   top: 0;
   left: 25px;
@@ -1111,10 +1088,10 @@ textarea.input {
   right: 50%;
 }
 
-.name__container.focus label ,
-.email__container.focus label ,
-.phone__container.focus label ,
-.message__container.focus label ,
+.name__container.focus label,
+.email__container.focus label,
+.phone__container.focus label,
+.message__container.focus label,
 .input__container.focus label {
   top: 0;
   transform: translateY(-50%);
@@ -1134,6 +1111,10 @@ textarea.input {
 .input__container.focus span::after {
   width: 50%;
   opacity: 1;
+}
+
+.contact__form button {
+  cursor: pointer;
 }
 
 
@@ -1197,7 +1178,7 @@ ul {
 .footer-section {
   background: #151414;
   position: relative;
-  padding: 3rem 4rem;
+  padding: 3rem 11rem;
 }
 
 .footer-cta {
@@ -3963,7 +3944,7 @@ img:hover {
   }
 
   .lg\:pb-20 {
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
   }
 
   .lg\:pl-20 {
