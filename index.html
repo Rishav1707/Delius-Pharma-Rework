@@ -98,16 +98,7 @@
                   <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#divisions" role="button"
-                    aria-haspopup="true" aria-expanded="false">Divisions</a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Pharma</a>
-                    <a class="dropdown-item" href="#">Laboratories</a>
-                    <a class="dropdown-item" href="#">Generics</a>
-                    <a class="dropdown-item" href="#">Export & Import</a>
-                    <a class="dropdown-item" href="#">Institutional</a>
-                    <a class="dropdown-item" href="#">Cosmetics</a>
-                  </div>
+                  <a class="nav-link" href="#divisions">Divisions</a>
                 </li>
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                   <a class="nav-link" href="#reach">Our Reach</a>
@@ -117,7 +108,7 @@
                   <a class="nav-link" href="#socials">Socials</a>
                 </li>
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="nav-link" href="#foot">Contact </a>
+                  <a class="nav-link" href="#contact">Contact </a>
                 </li>
               </ul>
             </div>
@@ -127,12 +118,17 @@
     </div>
   </div>
 
+  <!-- Loading screen -->
+  <div id="loading-screen">
+    <img src="assets/img/MAIN ANIMATION.gif" alt="Loading..." preload>
+  </div>
+
   <!--========== MAIN ==========-->
-  <main class="main">
+  <main class="main" id="main">
     <!--===== Home =====-->
     <section class="home" id="home">
       <div class="home__container container grid">
-        
+
 
         <img src="assets/img/home-img.png" alt="" class="home__img" />
 
@@ -916,98 +912,98 @@
     </script>
 
 
-        <!--===== Contact =====-->
-        <section class="contact section" id="contact">
-          <h2 data-heading="" class="section__title">Contact Us</h2>
+    <!--===== Contact =====-->
+    <section class="contact section" id="contact">
+      <h2 data-heading="" class="section__title">Contact Us</h2>
 
-          <div class="contact__container container grid">
-              <div class="contact__content">
-                  <div class="contact__info">
-                      <div class="contact__card">
-                          <i class="uil uil-envelope-edit contact__card-icon"></i>
-                          <h3 class="contact__card-title">Email</h3>
-                          <span class="contact__card-data">info@delius.in</span>
-                          <span class="contact__button">
-                              Write us <i class="uil uil-arrow-right contact__button-icon"></i>
-                          </span>
-                      </div>
-                  </div>
-
-                  <div class="contact__info">
-                      <div class="contact__card">
-                          <i class="uil uil-whatsapp contact__card-icon"></i>
-                          <h3 class="contact__card-title">Whatsapp</h3>
-                          <span class="contact__card-data">+91 7209774183</span>
-                          <span class="contact__button">
-                              Write us <i class="uil uil-arrow-right contact__button-icon"></i>
-                          </span>
-                      </div>
-                  </div>
-
-                  <div class="contact__info">
-                      <div class="contact__card">
-                          <i class="uil uil-facebook-messenger contact__card-icon"></i>
-                          <h3 class="contact__card-title">Messenger</h3>
-                          <span class="contact__card-data">user.deliuspharmaceutical</span>
-                          <span class="contact__button">
-                              Write us <i class="uil uil-arrow-right contact__button-icon"></i>
-                          </span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="contact__content">
-                  <form action="" class="contact__form" id="contactform">
-                      <div class="input__container">
-                          <input type="text" class="input" id="name">
-                          <label for="">Name</label>
-                          <span>Name</span>
-                      </div>
-                      
-                      <div class="input__container">
-                          <input type="email" class="input" id="email">
-                          <label for="">Email</label>
-                          <span>Email</span>
-                      </div>
-
-                      <div class="input__container">
-                          <input type="tel" class="input" id="phone">
-                          <label for="">Phone</label>
-                          <span>Phone</span>
-                      </div>
-
-                      <div class="input__container textarea">
-                          <textarea name="" id="message"  class="input" ></textarea>
-                          <label for="">Message</label>
-                          <span>Message</span>
-                      </div>
-                      <button type="submit" class="button"><i class="uil uil-message button__icon"></i>
-                          Send Message
-                      </button>
-                  </form>
-              </div>
+      <div class="contact__container container grid">
+        <div class="contact__content">
+          <div class="contact__info">
+            <div class="contact__card">
+              <i class="uil uil-envelope-edit contact__card-icon"></i>
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">info@delius.in</span>
+              <span class="contact__button">
+                Write us <i class="uil uil-arrow-right contact__button-icon"></i>
+              </span>
+            </div>
           </div>
-      </section>
-      <script>
-        /*=============== INPUT ANIMATION ===============*/
-        const inputs = document.querySelectorAll(".input");
 
-        function focusFunc() {
-            let parent = this.parentNode;
-            parent.classList.add("focus");
+          <div class="contact__info">
+            <div class="contact__card">
+              <i class="uil uil-whatsapp contact__card-icon"></i>
+              <h3 class="contact__card-title">Whatsapp</h3>
+              <span class="contact__card-data">+91 7209774183</span>
+              <span class="contact__button">
+                Write us <i class="uil uil-arrow-right contact__button-icon"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="contact__info">
+            <div class="contact__card">
+              <i class="uil uil-facebook-messenger contact__card-icon"></i>
+              <h3 class="contact__card-title">Messenger</h3>
+              <span class="contact__card-data">user.deliuspharmaceutical</span>
+              <span class="contact__button">
+                Write us <i class="uil uil-arrow-right contact__button-icon"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__content">
+          <form action="" class="contact__form" id="contactform">
+            <div class="input__container">
+              <input type="text" class="input" id="name">
+              <label for="">Name</label>
+              <span>Name</span>
+            </div>
+
+            <div class="input__container">
+              <input type="email" class="input" id="email">
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+
+            <div class="input__container">
+              <input type="tel" class="input" id="phone">
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+
+            <div class="input__container textarea">
+              <textarea name="" id="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <button type="submit" class="button"><i class="uil uil-message button__icon"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      /*=============== INPUT ANIMATION ===============*/
+      const inputs = document.querySelectorAll(".input");
+
+      function focusFunc() {
+        let parent = this.parentNode;
+        parent.classList.add("focus");
+      }
+
+      function blurFunc() {
+        let parent = this.parentNode;
+        if (this.value == "") {
+          parent.classList.remove("focus");
         }
+      }
 
-        function blurFunc() {
-            let parent = this.parentNode;
-            if (this.value == "") {
-                parent.classList.remove("focus");
-            }
-        }
-
-        inputs.forEach((input) => {
-            input.addEventListener("focus", focusFunc);
-            input.addEventListener("blur", blurFunc);
-        });
+      inputs.forEach((input) => {
+        input.addEventListener("focus", focusFunc);
+        input.addEventListener("blur", blurFunc);
+      });
     </script>
 
 
@@ -1163,6 +1159,7 @@
   <!--========== MAIN JS ==========-->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/typed-animation.js"></script>
+  <script src="assets/js/preloaderGif.js"></script>
 </body>
 
 </html>
