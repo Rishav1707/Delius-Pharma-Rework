@@ -5,9 +5,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function hidePreloader() {
-  // Hide the loading screen
-  document.getElementById("loading-screen").style.display = "none";
+  const loadingScreen = document.getElementById("loading-screen");
 
-  // Display the main content
-  document.getElementById("main").style.display = "block";
+  // Add an event listener for the 'transitionend' event
+  loadingScreen.addEventListener("transitionend", function () {
+    // Once the opacity transition is complete
+    if (loadingScreen.style.opacity == 0) {
+      loadingScreen.style.display = "none";
+      // Display the main content
+      document.getElementById("nav").style.display = "block";
+      document.getElementById("main").style.display = "block";
+    }
+  });
+
+  // Hide the loading screen by setting opacity
+  loadingScreen.style.opacity = 0;
 }
