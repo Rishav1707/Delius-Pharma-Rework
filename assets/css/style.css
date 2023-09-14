@@ -4729,7 +4729,7 @@ img:hover {
 }
 
 /* For Small Devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 361px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
