@@ -4588,10 +4588,6 @@ img:hover {
     margin-top: 0;
   }
 
-  .home__container {
-    row-gap: 4rem;
-  }
-
   .qualification__container {
     grid-template-columns: repeat(1, 215px);
     gap: 4rem;
@@ -4727,8 +4723,8 @@ img:hover {
     font-size: 1.2rem;
   }
 
-  .home__container {
-    row-gap: 6rem;
+  .services__container {
+    grid-template-columns: repeat(1, 260px);
   }
 }
 
@@ -4748,11 +4744,15 @@ img:hover {
   }
 
   .home__title {
-    font-size: .813rem;
+    font-size: 2rem;
   }
 
   .home__subtitle {
     font-size: var(--normal-font-size);
+  }
+
+  .section {
+    padding: 4.5rem 0 0;
   }
 
   .about__info {
@@ -4765,6 +4765,10 @@ img:hover {
   .skills__container,
   .qualification__container {
     grid-template-columns: 1fr;
+  }
+
+  .box {
+    padding: 15px;
   }
 
   .skills__title {
@@ -4780,7 +4784,11 @@ img:hover {
   }
 
   .services__container {
-    grid-template-columns: max-content;
+    grid-template-columns: repeat(1, 240px);
+  }
+
+  .text-2xl {
+    font-size: 1.019rem;
   }
 
   .services__content {
