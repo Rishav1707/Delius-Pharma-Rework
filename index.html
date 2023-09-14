@@ -365,83 +365,56 @@
         <div class="counter-up2"></div>
       </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
       $(document).ready(function () {
-        var isCounterUpActivated = false;
-        $(window).scroll(function () {
-          var scrollTop = $(window).scrollTop();
-          var elementOffset = $(".running-number").offset().top;
-          var distance = elementOffset - scrollTop;
-
-          if (distance < 600 && !isCounterUpActivated) {
-            activateCounterUp();
-            isCounterUpActivated = true;
-          }
-        });
-
         function activateCounterUp() {
           $(".counter").each(function () {
             var $this = $(this);
             var targetValue = parseInt($this.text());
             var suffix = $this.data("suffix");
-
-            $({ Counter: 0 }).animate(
-              { Counter: targetValue },
-              {
-                duration: 3000, // Adjust the duration to control animation speed (in milliseconds)
-                easing: "swing",
-                step: function () {
-                  var formattedValue = Math.ceil(this.Counter);
-
-                  if (suffix && suffix !== "+") {
-                    formattedValue += suffix;
-                  }
-
-                  $this.text(formattedValue);
-                },
-                complete: function () {
-                  if (suffix && suffix === "+") {
-                    $this.text($this.text() + suffix);
-                  }
-                },
-              }
-            );
-          });
-
-          setInterval(function () {
-            $(".counter").each(function () {
-              var $this = $(this);
-              var targetValue = parseInt(
-                $this.text().replace(/[^\d.-]/g, "")
-              );
-              var suffix = $this.data("suffix");
-
-              $({ Counter: 0 }).animate(
-                { Counter: targetValue },
+    
+            function animateCounter() {
+              $this.prop("Counter", 0).animate(
                 {
-                  duration: 3000, // Adjust the duration to control animation speed (in milliseconds)
+                  Counter: targetValue,
+                },
+                {
+                  duration: 6000, // Adjust the duration to control animation speed (in milliseconds)
                   easing: "swing",
-                  step: function () {
-                    var formattedValue = Math.ceil(this.Counter);
-
+                  step: function (now) {
+                    var formattedValue = Math.ceil(now);
+    
                     if (suffix && suffix !== "+") {
                       formattedValue += suffix;
                     }
-
+    
                     $this.text(formattedValue);
                   },
                   complete: function () {
                     if (suffix && suffix === "+") {
                       $this.text($this.text() + suffix);
                     }
+    
+                    // Delay the restart of the animation by 2 seconds
+                    setTimeout(animateCounter, 2000); // 2-second pause
                   },
                 }
               );
-            });
-          }, 6000); // Repeat the animation every 6 seconds (adjust as needed)
+            }
+    
+            // Start the animation
+            animateCounter();
+          });
         }
+    
+        // Activate the animation when the page loads
+        activateCounterUp();
       });
     </script>
+    
+        
     <section></section>
     <!-- Countries Section -->
     <section class="swiper mySwiper" id="reach">

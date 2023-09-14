@@ -618,6 +618,7 @@ section:nth-child(even) {
 }
 
 .box {
+  
   /* Adjust the width of the box here */
   flex: calc(32% - 30px);
   /* Decreased width and added margin to create space between boxes */
