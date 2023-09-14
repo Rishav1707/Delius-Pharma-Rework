@@ -10,17 +10,29 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!--========== UNICONS ==========-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
+
+    <!-- AJAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
   <!--========== BOXICONS ==========-->
   <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!--========== SWIPER CSS ==========-->
+  <link rel="stylesheet" type="text/css" href="./assets/css/flipbook.style.css">
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
   <!--========== MAIN CSS ==========-->
@@ -40,7 +52,7 @@
       $(document).ready(function () {
         $("#read").flipBook({
           //Layout Setting
-          pdfUrl: 'pdf/Insights_Annual_Magazine.pdf',
+          pdfUrl: './assets/pdf/DELIUS PRODUCT BROCHURE.pdf',
           lightBox: true,
           layout: 3,
           currentPage: { vAlign: "bottom", hAlign: "left" },
@@ -99,50 +111,6 @@
 
 
 <body>
-  <!--========== SIDEBAR ==========-->
-  <!-- <div class="nav__toggle" id="nav-toggle">
-    <i class="uil uil-bars"></i>
-  </div>
-  <aside class="sidebar" id="sidebar">
-    <nav class="nav">
-      <div class="nav__logo">
-        <a href="index.html" class="nav__logo-link">
-          <img src="./assets/img/dLogo.jpg" alt="Logo" class="nav__logo-img">
-        </a>
-      </div>
-
-      <div class="nav__menu">
-        <div class="menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#divisions" class="nav__link">Division</a>
-            </li>
-            <li class="nav__item">
-              <a href="#reach" class="nav__link">Our Reach</a>
-            </li>
-            <li class="nav__item">
-              <a href="#socials" class="nav__link">Socials</a>
-            </li>
-            <li class="nav__item">
-              <a href="#foot" class="nav__link">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="btn__share">
-        <i class="uil uil-share-alt social__share"></i>
-      </div>
-      <div class="nav__close" id="nav-close">
-        <i class="uil uil-times"></i>
-      </div>
-    </nav>
-  </aside> -->
 
   <!-- NavBar
 ================================================== -->
@@ -1219,15 +1187,18 @@
   <!--========== SCROLL UP ==========-->
   <!--========== MIXITUP FILTER ==========-->
   <script src="assets/js/mixitup.min.js"></script>
-  <!--========== FIREBASE JS ==========-->
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
-
   <!--========== MAIN JS ==========-->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/typed-animation.js"></script>
   <script src="assets/js/preloaderGif.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
