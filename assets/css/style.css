@@ -4369,6 +4369,12 @@ img:hover {
 /* For Medium Devices */
 @media screen and (max-width: 768px) {
 
+
+  .home{
+    background-image: url("../images/buildingLogoMockkk_medium.png");
+  }
+
+
   .start-header {
     padding: 20px 0;
   }
@@ -4650,8 +4656,10 @@ img:hover {
   }
 
   .home__img {
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: block;
-    width: 250px;
+    width: 300px;
     justify-self: center;
   }
 
@@ -4787,8 +4795,10 @@ img:hover {
   }
 
   .home__img {
-    width: 200px;
-  }
+    display: block;
+    width: 250px;
+    justify-self: center;
+}
 
   .home__container {
     align-items: center;
