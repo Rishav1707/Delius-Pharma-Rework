@@ -158,46 +158,22 @@ function navHighlighter() {
   });
 }
 
-//-------------firebase not working thing here----------------
-const firebaseConfig = {
-  apiKey: "AIzaSyAa9IwvHkdq64rP8WN5ZUxgyvaM1u7ZZJg",
-  authDomain: "portfolio-contactme-form.firebaseapp.com",
-  databaseURL:
-    "https://portfolio-contactme-form-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "portfolio-contactme-form",
-  storageBucket: "portfolio-contactme-form.appspot.com",
-  messagingSenderId: "5925314066",
-  appId: "1:5925314066:web:31d9dcf67ab2effe7b42cb",
-  measurementId: "G-97034BCRQD",
-};
-//initialize firebase
-firebase.initializeApp(firebaseConfig);
-// reference your database
-let contactInfo = firebase.database().ref("Infos");
+//Email JS
 
-document.querySelector(".contact__form").addEventListener("submit", submitForm);
-
-function submitForm(e) {
-  e.preventDefault();
-
-  //get values
-  let name = document.querySelector("input").value;
-  let email = document.querySelector("input").value;
-  let phone = document.querySelector("input").value;
-  let message = document.querySelector("input").value;
-
-  console.log(name, email, phone, message);
-
-  saveContactInfo(name, email, phone, message);
-}
-
-function saveContactInfo(name, email, phone, message) {
-  let newContactInfo = contactInfo.push();
-
-  newContactInfo.set({
-    Name: name,
-    Email: email,
-    Phone: phone,
-    Message: message,
+function SendMail(event) {
+  event.preventDefault(); // Prevent the default form submission
+  console.log('SendMail() function called');
+  var params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      message: document.getElementById("message").value,
+  }
+  emailjs.send('service_clpoeki', 'template_xqgjt1g', params).then(function(res){
+      alert("Your enquiry has been sent!" );
+  }).catch(function(error) {
+      console.error("Email sending failed:", error);
   });
 }
+
+
