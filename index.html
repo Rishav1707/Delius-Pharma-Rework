@@ -1003,6 +1003,26 @@
       </div>
     </section>
     <script>
+      //Email JS
+
+function SendMail(event) {
+  event.preventDefault(); // Prevent the default form submission
+  console.log('SendMail() function called');
+  var params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      message: document.getElementById("message").value,
+  }
+  emailjs.send('service_clpoeki', 'template_xqgjt1g', params).then(function(res){
+      alert("Your enquiry has been sent!" );
+  }).catch(function(error) {
+      console.error("Email sending failed:", error);
+  });
+}
+
+    </script>
+    <script>
       /*=============== INPUT ANIMATION ===============*/
       const inputs = document.querySelectorAll(".input");
 
