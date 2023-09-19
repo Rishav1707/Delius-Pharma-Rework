@@ -12,14 +12,14 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!--========== UNICONS ==========-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
 
-    <!-- AJAX -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <!-- AJAX -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 
   <!--========== BOXICONS ==========-->
   <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
@@ -44,77 +44,77 @@
 
   <!-- EmailJS -->
   <script type="text/javascript">
-    (function(){
-       emailjs.init("1vsu1FwQ4QH9WMEgX");
+    (function () {
+      emailjs.init("1vsu1FwQ4QH9WMEgX");
     })();
- </script>
+  </script>
 
 
   <!-- Include JS -->
   <script src="js/flipbook.min.js"></script>
 
-  
-    <!--========== Flip.js ==========-->
-    <script type="text/javascript">
 
-      $(document).ready(function () {
-        $("#read").flipBook({
-          //Layout Setting
-          pdfUrl: './assets/pdf/DELIUS PRODUCT BROCHURE.pdf',
-          lightBox: true,
-          layout: 3,
-          currentPage: { vAlign: "bottom", hAlign: "left" },
-          // BTN SETTING
-          btnShare: { enabled: false },
-          btnPrint: {
-            hideOnMobile: true
-          },
-          btnDownloadPages: {
-            enabled: false,
-            title: "Download pages",
-            icon: "fa-download",
-            icon2: "file_download",
-            url: "images/pdf.rar",
-            name: "allPages.zip",
-            hideOnMobile: false
-          },
-          btnColor: 'rgb(255,120,60)',
-          sideBtnColor: 'rgb(255,120,60)',
-          sideBtnSize: 60,
-          sideBtnBackground: "rgba(0,0,0,.7)",
-          sideBtnRadius: 60,
-          btnSound: { vAlign: "top", hAlign: "left" },
-          btnAutoplay: { vAlign: "top", hAlign: "left" },
-          // SHARING
-          btnShare: {
-            enabled: false,
-            title: "Share",
-            icon: "fa-share-alt"
-          },
-          facebook: {
-            enabled: true,
-            url: ""
-          },
-          google_plus: {
-            enabled: false
-          },
-          email: {
-            enabled: true,
-            url: "",
-            title: "PDF",
-            description: ""
-          },
-          twitter: {
-            enabled: true,
-            url: ""
-          },
-          pinterest: {
-            enabled: true,
-            url: ""
-          }
-        });
-      })
-    </script>
+  <!--========== Flip.js ==========-->
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $("#read").flipBook({
+        //Layout Setting
+        pdfUrl: './assets/pdf/DELIUS PRODUCT BROCHURE.pdf',
+        lightBox: true,
+        layout: 3,
+        currentPage: { vAlign: "bottom", hAlign: "left" },
+        // BTN SETTING
+        btnShare: { enabled: false },
+        btnPrint: {
+          hideOnMobile: true
+        },
+        btnDownloadPages: {
+          enabled: false,
+          title: "Download pages",
+          icon: "fa-download",
+          icon2: "file_download",
+          url: "images/pdf.rar",
+          name: "allPages.zip",
+          hideOnMobile: false
+        },
+        btnColor: 'rgb(255,120,60)',
+        sideBtnColor: 'rgb(255,120,60)',
+        sideBtnSize: 60,
+        sideBtnBackground: "rgba(0,0,0,.7)",
+        sideBtnRadius: 60,
+        btnSound: { vAlign: "top", hAlign: "left" },
+        btnAutoplay: { vAlign: "top", hAlign: "left" },
+        // SHARING
+        btnShare: {
+          enabled: false,
+          title: "Share",
+          icon: "fa-share-alt"
+        },
+        facebook: {
+          enabled: true,
+          url: ""
+        },
+        google_plus: {
+          enabled: false
+        },
+        email: {
+          enabled: true,
+          url: "",
+          title: "PDF",
+          description: ""
+        },
+        twitter: {
+          enabled: true,
+          url: ""
+        },
+        pinterest: {
+          enabled: true,
+          url: ""
+        }
+      });
+    })
+  </script>
 </head>
 
 
@@ -162,12 +162,6 @@
     </div>
   </div>
 
-
-  <!-- Loading screen -->
-  <div id="loading-screen">
-    <img src="assets/img/MAIN ANIMATION.gif" alt="Loading..." preload>
-  </div>
-
   <!--========== MAIN ==========-->
   <main class="main" id="main">
     <!--===== Home =====-->
@@ -181,7 +175,8 @@
           <h1 class="home__title">Delius Pharmaceutical</h1>
           <h3 class="home__subtitle"><span class="multiple-text"></span></h3>
           <p class="home__description">Caring for you everyday and beyond.</p>
-          <a id="read" href="./assets/pdf/DELIUS PRODUCT BROCHURE.pdf" class="button"><i class="uil uil-book-alt button__icon"></i>
+          <a id="read" href="./assets/pdf/DELIUS PRODUCT BROCHURE.pdf" class="button"><i
+              class="uil uil-book-alt button__icon"></i>
             Brochure &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i
               class="uil uil-arrow-right button__icon"></i>
           </a>
@@ -382,7 +377,7 @@
             var $this = $(this);
             var targetValue = parseInt($this.text());
             var suffix = $this.data("suffix");
-    
+
             function animateCounter() {
               $this.prop("Counter", 0).animate(
                 {
@@ -393,36 +388,36 @@
                   easing: "swing",
                   step: function (now) {
                     var formattedValue = Math.ceil(now);
-    
+
                     if (suffix && suffix !== "+") {
                       formattedValue += suffix;
                     }
-    
+
                     $this.text(formattedValue);
                   },
                   complete: function () {
                     if (suffix && suffix === "+") {
                       $this.text($this.text() + suffix);
                     }
-    
+
                     // Delay the restart of the animation by 2 seconds
                     setTimeout(animateCounter, 2000); // 2-second pause
                   },
                 }
               );
             }
-    
+
             // Start the animation
             animateCounter();
           });
         }
-    
+
         // Activate the animation when the page loads
         activateCounterUp();
       });
     </script>
-    
-        
+
+
     <section></section>
     <!-- Countries Section -->
     <section class="swiper mySwiper" id="reach">
@@ -1002,24 +997,25 @@
         </div>
       </div>
     </section>
+    <div class="Extra-Space"></div>
     <script>
       //Email JS
 
-function SendMail(event) {
-  event.preventDefault(); // Prevent the default form submission
-  console.log('SendMail() function called');
-  var params = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      phone: document.getElementById("phone").value,
-      message: document.getElementById("message").value,
-  }
-  emailjs.send('service_clpoeki', 'template_xqgjt1g', params).then(function(res){
-      alert("Your enquiry has been sent!" );
-  }).catch(function(error) {
-      console.error("Email sending failed:", error);
-  });
-}
+      function SendMail(event) {
+        event.preventDefault(); // Prevent the default form submission
+        console.log('SendMail() function called');
+        var params = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          phone: document.getElementById("phone").value,
+          message: document.getElementById("message").value,
+        }
+        emailjs.send('service_clpoeki', 'template_xqgjt1g', params).then(function (res) {
+          alert("Your enquiry has been sent!");
+        }).catch(function (error) {
+          console.error("Email sending failed:", error);
+        });
+      }
 
     </script>
     <script>
@@ -1195,8 +1191,8 @@ function SendMail(event) {
   <script src="assets/js/preloaderGif.js"></script>
 
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
     integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
