@@ -17,10 +17,6 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
 
-  <!-- AJAX -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-
   <!--========== BOXICONS ==========-->
   <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
 
@@ -52,72 +48,6 @@
    })();
 </script>
 
-
-  <!-- Include JS -->
-  <script src="js/flipbook.min.js"></script>
-
-
-  <!--========== Flip.js ==========-->
-  <script type="text/javascript">
-
-    $(document).ready(function () {
-      $("#read").flipBook({
-        //Layout Setting
-        pdfUrl: './assets/pdf/DELIUS PRODUCT BROCHURE.pdf',
-        lightBox: true,
-        layout: 3,
-        currentPage: { vAlign: "bottom", hAlign: "left" },
-        // BTN SETTING
-        btnShare: { enabled: false },
-        btnPrint: {
-          hideOnMobile: true
-        },
-        btnDownloadPages: {
-          enabled: false,
-          title: "Download pages",
-          icon: "fa-download",
-          icon2: "file_download",
-          url: "images/pdf.rar",
-          name: "allPages.zip",
-          hideOnMobile: false
-        },
-        btnColor: 'rgb(255,120,60)',
-        sideBtnColor: 'rgb(255,120,60)',
-        sideBtnSize: 60,
-        sideBtnBackground: "rgba(0,0,0,.7)",
-        sideBtnRadius: 60,
-        btnSound: { vAlign: "top", hAlign: "left" },
-        btnAutoplay: { vAlign: "top", hAlign: "left" },
-        // SHARING
-        btnShare: {
-          enabled: false,
-          title: "Share",
-          icon: "fa-share-alt"
-        },
-        facebook: {
-          enabled: true,
-          url: ""
-        },
-        google_plus: {
-          enabled: false
-        },
-        email: {
-          enabled: true,
-          url: "",
-          title: "PDF",
-          description: ""
-        },
-        twitter: {
-          enabled: true,
-          url: ""
-        },
-        pinterest: {
-          enabled: true,
-          url: ""
-        }
-      });
-    })
-  </script>
 </head>
 
 
@@ -175,10 +105,10 @@
         <img src="./assets/img/logoBgRemovedGold.png" alt="" class="home__img" />
 
         <div class="home__data">
-          <h1 class="home__title">Delius Pharmaceutical</h1>
+          <h1 class="home__title">Delius Pharmaceuticals</h1>
           <h3 class="home__subtitle"><span class="multiple-text"></span></h3>
           <p class="home__description">Caring for you everyday and beyond.</p>
-          <a id="read" href="./assets/pdf/DELIUS PRODUCT BROCHURE.pdf" class="button"><i
+          <a id="read" href="./brochure_page/v-pdf.html" class="button"><i
               class="uil uil-book-alt button__icon"></i>
             Brochure &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i
               class="uil uil-arrow-right button__icon"></i>
@@ -242,87 +172,98 @@
 
     <!--===== Divisions =====-->
 
+
     <section class="qualification section" id="divisions">
       <h2 class="section__title">Divisions</h2>
-
+  
       <div class="qualification__container container grid">
         <div class="education">
-          <!-- <h3 class="qualification__title">
-            <i class="uil uil-graduation-cap"></i> Delius Pharma
-          </h3> -->
-
           <div class="timeline">
-            <div class="timeline__item">
-              <div class="circle__dot"></div>
-              <h2 class="timeline__title">
-                Delius Pharma
-              </h2>
-              <p class="timeline__text">Text Here</p>
-              <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                Text Here
-              </span>
+            <div class="timeline__image">
+              <img src="./assets/img/pharma.svg" alt="Image Description" width="150" height="150">
             </div>
+            <div class="timeline__item">
 
+              <div class="circle__dot"></div>
+              <div class="timeline__content">
+                <h2 class="timeline__title">
+                  Delius Pharma
+                </h2>
+                <p class="timeline__text">Pioneering pharmaceutical solutions for a healthier world.</p>
+              </div>
+            </div>
+            <br>
+            <div class="timeline__image">
+              <img src="./assets/img/generics.svg" alt="Image Description" width="150" height="150">
+            </div>
             <div class="timeline__item">
               <div class="circle__dot"></div>
-              <h2 class="timeline__title">
-                Delius Generics
-              </h2>
-              <p class="timeline__text">Text Here</p>
-              <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                Text Here
-              </span>
+              <div class="timeline__content">
+                <h2 class="timeline__title">
+                  Delius Generics
+                </h2>
+                <p class="timeline__text">Affordable quality medications for all.</p>
+              </div>
             </div>
-
+            <br>
+            <div class="timeline__image">
+              <img src="./assets/img/institutional.svg" alt="Image Description" width="150" height="150">
+            </div>
             <div class="timeline__item">
               <div class="circle__dot"></div>
-              <h2 class="timeline__title">Delius Institutional</h2>
-              <p class="timeline__text">
-                Text Here
-              </p>
-              <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                Text Here
-              </span>
+              <div class="timeline__content">
+                <h2 class="timeline__title">Delius Institutional</h2>
+                <p class="timeline__text">Meeting healthcare needs with tailored solutions.</p>
+              </div>
             </div>
+  
           </div>
         </div>
+  
         <div class="experience">
-          <!-- <h3 class="qualification__title">
-            <i class="uil uil-suitcase"></i> Experience
-          </h3> -->
-
           <div class="timeline">
+            
+            <div class="timeline__image">
+              <img src="./assets/img/laboratories.svg" alt="Image Description" width="150" height="150">
+            </div>
             <div class="timeline__item">
               <div class="circle__dot"></div>
-              <h2 class="timeline__title">Delius Laboratories</h2>
-              <p class="timeline__text">Text Here</p>
-              <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                Text Here
-              </span>
+              <div class="timeline__content">
+                <h2 class="timeline__title">Delius Laboratories</h2>
+                <p class="timeline__text">Advancing science through cutting-edge research and innovation.</p>
+              </div>
             </div>
-
+            <br>
+            <div class="timeline__image">
+              <img src="./assets/img/import_export.svg" alt="Image Description" width="150" height="150">
+            </div>
             <div class="timeline__item">
               <div class="circle__dot"></div>
-              <h2 class="timeline__title">Delius Export & Import</h2>
-              <p class="timeline__text">Text Here</p>
-              <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                Text Here
-              </span>
+              <div class="timeline__content">
+                <h2 class="timeline__title">Delius Export & Import</h2>
+                <p class="timeline__text">Bridging global healthcare supply chains.</p>
+              </div>
             </div>
-
+            <br>
+            <div class="timeline__image">
+              <img src="./assets/img/cosmetics.svg" alt="Image Description" width="150" height="150">
+            </div>
             <div class="timeline__item">
               <div class="circle__dot"></div>
-              <h2 class="timeline__title">Delius Cosmetics</h2>
-              <p class="timeline__text">Text Here</p>
-              <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                Text Here
-              </span>
+              <div class="timeline__content">
+                <h2 class="timeline__title">Delius Cosmetics</h2>
+                <p class="timeline__text">Elevating beauty with premium skincare and cosmetics.</p>
+              </div>
             </div>
+  
           </div>
         </div>
       </div>
       <br><br><br>
     </section>
+  
+  
+
     <!--===== Skills =====-->
     <section class="running-number" id="reach">
       <h2 class="section__title">Numbers Speak for Themselves</h2>
