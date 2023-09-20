@@ -93,6 +93,7 @@
       font-size: 15px;
       font-weight: bold;
       color: #0186c9;
+      padding: 0.5rem;
     }
 
     #date {
@@ -109,10 +110,23 @@
     #description {
       margin-top: 20px;
       font-weight: lighter;
+      padding: 0.5rem;
     }
 
-    #title{
+    #title {
       margin-right: 10px;
+      padding: 0.5rem;
+    }
+
+    .button {
+      padding: 0.5rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      .PDF-image {
+        max-width: 28.5%;
+        flex: none;
+      }
     }
   </style>
 
@@ -135,7 +149,7 @@
     <div class="container">
       <div class="card shadow">
         <div class="row">
-          <div class="col-md-3">
+          <div class="PDF-image col-md-3">
             <img src="images/book2/0.png" class="w-100 book-1">
           </div>
           <div class="col-md-7 mt-3">
@@ -151,7 +165,8 @@
                 <i class="fas fa-download fa-lg"></i></a>
             </div>
             <!-- Description -->
-            <p id="description">Delius forayed into the pharmaceutical industry in 2014. Now, we are a flourishing market leader in
+            <p id="description">Delius forayed into the pharmaceutical industry in 2014. Now, we are a flourishing
+              market leader in
               India with concentrations in generic and ethical pharmaceuticals. Our ultimate goal is to make a
               meaningful difference in the lives of patients and create a positive impact on the world through
               excellence and commitment. We are passionate about our goals and optimistic about the future of
@@ -170,7 +185,9 @@
     <div class="container">
       <div class="row text-center text-xs-center text-sm-left text-md-left">
         <div class="col-xs-12 col-sm-4 col-md-4">
-          <a href=""><h5>Contact Us</h5></a>
+          <a href="">
+            <h5>Contact Us</h5>
+          </a>
           <ul class="list-unstyled quick-links">
 
             <li><a href="#"><i class="fas fa-envelope"></i>info@delius.in</a></li>
