@@ -522,28 +522,37 @@ input {
 }
 
 .timeline__item {
-  width: 250px; /* Adjust the width as needed */
-  margin: 0 2rem 1rem 1rem; /* Add some margin for spacing */
+  width: 250px;
+  /* Adjust the width as needed */
+  margin: 0 2rem 1rem 1rem;
+  /* Add some margin for spacing */
   box-sizing: border-box;
-  text-align: center; /* Center-align the content */
-  position: relative; /* Add position relative */
-  padding-left: 20px; /* Create space for the line and dot */
+  text-align: center;
+  /* Center-align the content */
+  position: relative;
+  /* Add position relative */
+  padding-left: 20px;
+  /* Create space for the line and dot */
 }
 
 .timeline__image {
   width: 100px;
   height: 100px;
-  margin-left: 100px; /* Center the image horizontally */
+  margin-left: 100px;
+  /* Center the image horizontally */
   display: flex;
-  justify-content: center; /* Center the image vertically */
+  justify-content: center;
+  /* Center the image vertically */
   align-items: center;
-  overflow: hidden; /* Hide overflowing image parts */
+  overflow: hidden;
+  /* Hide overflowing image parts */
 }
 
 .timeline__image img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+  object-fit: cover;
+  /* Maintain aspect ratio and cover the entire space */
 }
 
 
@@ -4187,6 +4196,18 @@ img:hover {
     margin-left: var(--mb-2-5);
     margin-right: var(--mb-2-5);
   }
+
+  .home__title {
+    font-size: 4.5rem;
+  }
+
+  .footer-section {
+    padding: 3rem;
+  }
+
+  .contactus-row {
+    gap: 8.6rem;
+  }
 }
 
 @media screen and (max-width: 1216px) {
@@ -4211,7 +4232,11 @@ img:hover {
   }
 
   .home__title {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
+  }
+
+  .home__data {
+    margin-top: 10rem;
   }
 
   .home__subtitle {
@@ -4794,9 +4819,9 @@ img:hover {
     font-size: 2.3rem;
   }
 
-  
+
   .text-2xl {
-    font-size: 1.2rem;
+    font-size: 1.11rem;
   }
 
   .services__container {
@@ -4804,7 +4829,7 @@ img:hover {
   }
 
   .navbar-toggler {
-    left: 21.7rem;
+    left: 20.4rem;
   }
 
   .navbar-nav {
@@ -4821,21 +4846,27 @@ img:hover {
   }
 }
 
-@media screen and (max-width: 390px) {
-  .home__data{
+@media screen and (max-width: 391px) {
+  .home__data {
     margin-left: 10px;
   }
+
   .home__title {
-    font-size: 2.2rem; /* Adjust the font size as needed */
-    text-align: left; /* Align the text to the left */
+    font-size: 2.2rem;
+    /* Adjust the font size as needed */
+    text-align: left;
+    /* Align the text to the left */
   }
-  .home__subtitle{
+
+  .home__subtitle {
     font-size: 20px;
   }
-  .home__description{
+
+  .home__description {
     font-size: 18px;
   }
-  .navbar-light .navbar-toggler-icon{
+
+  .navbar-light .navbar-toggler-icon {
     width: 24px;
     height: 17px;
     background-image: none;
@@ -4844,6 +4875,21 @@ img:hover {
     border-bottom: 1px solid #000;
     transition: all 300ms linear;
   }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline__image {
+    margin-left: 0;
+  }
+
+  .timeline__item {
+    margin: 0;
+  }
+
 }
 
 /* For Small Devices */
@@ -4852,8 +4898,6 @@ img:hover {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
-
-
 
   .home__img {
     display: block;
@@ -4874,7 +4918,7 @@ img:hover {
   }
 
   .navbar-toggler {
-    left: 18.8rem;
+    left: 19rem;
   }
 
   .navbar-nav {
@@ -4924,5 +4968,15 @@ img:hover {
 
   .services__content {
     padding-right: 3.5rem;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline__image {
+    margin-left: 0;
   }
 }
