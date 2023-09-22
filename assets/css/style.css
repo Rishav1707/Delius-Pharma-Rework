@@ -150,6 +150,30 @@ input {
   color: var(--skin-color);
 }
 
+/*============== Preloader GIF  ================*/
+
+#loading-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#loading-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.main,
+.navigation-wrap {
+  display: none;
+}
+
 /* #Navigation
 ================================================== */
 
@@ -4670,6 +4694,10 @@ img:hover {
     margin-top: 0;
   }
 
+  .home__description {
+    display: none;
+  }
+
   .qualification__container {
     grid-template-columns: repeat(1, 215px);
     gap: 4rem;
@@ -4693,7 +4721,7 @@ img:hover {
     display: block;
     border: 4px solid #0dab05;
     border-radius: .75rem;
-    width: 357px;
+    width: 257px;
     justify-self: center;
   }
 
