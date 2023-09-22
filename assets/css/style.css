@@ -150,29 +150,6 @@ input {
   color: var(--skin-color);
 }
 
-/*============== Preloader GIF  ================*/
-
-#loading-screen {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  overflow: hidden;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-}
-
-#loading-screen img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-}
-
-.main,
-.navigation-wrap {
-  display: none;
-}
 
 /* #Navigation
 ================================================== */
