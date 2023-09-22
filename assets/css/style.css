@@ -4699,7 +4699,9 @@ img:hover {
   }
 
   .qualification__container {
-    grid-template-columns: repeat(1, 215px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 4rem;
   }
 
