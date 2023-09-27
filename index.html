@@ -60,7 +60,7 @@
       <div class="row">
         <div class="col-12">
           <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="#"><img src="assets/img/DP logo.png" alt="" /></a>
+            <a class="navbar-brand" href="#"><img src="assets/img/DP logo2.png" alt="" /></a>
             <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse"
               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
@@ -102,13 +102,13 @@
       <div class="home__container container grid">
 
 
-        <img src="./assets/img/WALL.JPG" alt="" class="home__img" />
+        <img src="./assets/img/WALL.webp" alt="" class="home__img" />
 
         <div class="home__data">
           <h1 class="home__title">Delius Pharmaceuticals</h1>
           <h3 class="home__subtitle"><span class="multiple-text"></span></h3>
           <p class="home__description">Caring for you everyday and beyond.</p>
-          <a id="read" href="./brochure_page/v-pdf.html" class="button"><i class="uil uil-book-alt button__icon"></i>
+          <a id="read" href="./brochure_page/Delius-Brochure.html" class="button"><i class="uil uil-book-alt button__icon"></i>
             Brochure &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i
               class="uil uil-arrow-right button__icon"></i>
           </a>
@@ -118,16 +118,20 @@
             <i class="uil uil-instagram info__icon"></i>
 
             <div>
-              <h3 class="info__title">Instagram</h3>
+              <a href="https://www.instagram.com/deliuspharma/">
+                <h3 class="info__title">Instagram</h3>
               <span class="info__subtitle">@deliuspharma</span>
             </div>
+              </a>
           </div>
 
           <div class="info__item">
             <i class="uil uil-whatsapp info__icon"></i>
             <div>
-              <h3 class="info__title">Whatsapp</h3>
+              <a href="https://api.whatsapp.com/send?phone=917209774183">
+                <h3 class="info__title">Whatsapp</h3>
               <span class="info__subtitle">+91 7209774183</span>
+              </a>
             </div>
           </div>
 
@@ -135,8 +139,10 @@
             <i class="uil uil-envelope-edit info__icon"></i>
 
             <div>
-              <h3 class="info__title">Email Us</h3>
+              <a href="mailto:info@delius.in">
+                <h3 class="info__title">Email Us</h3>
               <span class="info__subtitle">info@delius.in</span>
+              </a>
             </div>
           </div>
         </div>
@@ -150,11 +156,11 @@
         <img src="./assets/img/officeLogo.jpg" alt="" class="about__img" />
 
         <div class="about__data">
-          <h3 class="about__heading">Description</h3>
+          <h3 class="about__heading">Overview</h3>
           <p class="about__description">
             Delius Pharmaceuticals is a leading pharmaceutical company,
-            offering high-quality ethical and generic medicines. We prioritize
-            innovation and patient well-being, earning your trust. Our
+            offering high-quality medicines. We prioritize
+            innovation and well-being of patient, earning your trust. Our
             advanced facilities meet strict quality standards, ensuring safe
             products. By collaborating with healthcare providers and
             researchers, we drive medical advancements. Our mission is
@@ -201,7 +207,7 @@
                 <h2 class="timeline__title">
                   Delius Generics
                 </h2>
-                <p class="timeline__text">Affordable quality medications for all.</p>
+                <p class="timeline__text">Affordable quality medicines for all.</p>
               </div>
             </div>
             <br>
@@ -522,9 +528,9 @@
       var swiper = new Swiper(".mySwiper", {
         loop: true,
         autoplay: true,
-        autoplayTimeout: 100,
+        autoplayTimeout: 3000, // Change this value to a suitable duration (e.g., 3000 milliseconds or 3 seconds)
         autoplayHoverPause: true,
-
+    
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
@@ -542,6 +548,7 @@
         },
       });
     </script>
+    
 
     <!--===== Services =====-->
     <section class="services section" id="socials">
@@ -621,15 +628,15 @@
         <ul class="md:flex w-full my-8">
           <li data-id="tab1"
             class="tabs md:w-1/2 lg:w-1/4 text-lg lg:text-2xl text-center lg:text-left leading-34 font-medium text-white cursor-pointer py-4 border-b-2 border-white">
-            Corporate HQ
+            Registered Office
           </li>
           <li data-id="tab2"
             class="tabs md:w-1/2 lg:w-1/4 text-lg lg:text-2xl text-center lg:text-left leading-34 font-medium text-white cursor-pointer py-4 border-b-2 border-white opacity-30">
-            Registered Office
+            Corporate Office
           </li>
           <li data-id="tab3"
             class="tabs md:w-1/2 lg:w-1/4 text-lg lg:text-2xl text-center lg:text-left leading-34 font-medium text-white cursor-pointer py-4 border-b-2 border-white opacity-30">
-            Other Regional Offices
+            Zonal Office
           </li>
           <li data-id="tab4"
             class="tabs md:w-1/2 lg:w-1/4 text-lg lg:text-2xl text-center lg:text-left leading-34 font-medium text-white cursor-pointer py-4 border-b-2 border-white opacity-30">
@@ -687,17 +694,16 @@
                 <h3 class="h2 text-2xl leading-30 my-2 font-medium">
                   Delius Pharmaceuticals Pvt. Ltd.
                 </h3>
-                <a href="https://www.google.com/maps/place/Delius+Pharmaceuticals+Pvt+Ltd/@28.6007461,77.0269966,17z/data=!3m1!4b1!4m6!3m5!1s0x39ed588e2e70717d:0xe1cceff4ae5b6935!8m2!3d28.6007461!4d77.0295715!16s%2Fg%2F11c2ppl9x0?entry=ttu"
-                  target="_blank">
-                  <img src="./assets/img/map.png" alt="" /></a>
+                
+                  <img src="./assets/img/map.png" alt="" />
               </div>
             </div>
             <hr />
             <div class="text-lg md:flex my-2 text-primary-heading items-center justify-between">
               <div class="text-lg md:flex my-2 text-primary-heading items-center flex-wrap justify-between">
                 <div class="flex-shrink-1 mx-3">
-                  <strong>Address: </strong>First Floor Manish Metro Plaza-IV
-                  Plot No.4 Pocket-5, Sector-12 Dwarka, New Delhi- 110 075
+                  <strong>Address: </strong>Zenia, 4th Floor, Hiranandani
+                  Circle, Hiranandani Business Park, Thane, Mumbai - 400 608
                 </div>
 
                 <div class="flex-shrink-1 mx-3">
@@ -724,17 +730,17 @@
                 <h3 class="h2 text-2xl leading-30 my-2 font-medium">
                   Delius Pharmaceuticals Pvt. Ltd.
                 </h3>
-                <a href="https://www.google.com/maps/place/Gennova+Biopharmaceuticals+Ltd/@18.5932254,73.7114455,17z/data=!3m1!4b1!4m5!3m4!1s0x3bc2bbbb43e31603:0xcc52d631d920af1d!8m2!3d18.5932493!4d73.7136813"
-                  target="_blank">
-                  <img src="./assets/img/map.png" alt="" /></a>
+                  <img src="./assets/img/map.png" alt="" />
               </div>
             </div>
             <hr />
             <div class="text-lg md:flex my-2 text-primary-heading items-center justify-between">
               <div class="text-lg md:flex my-2 text-primary-heading items-center flex-wrap justify-between">
                 <div class="flex-shrink-1 mx-3">
-                  <strong>Address: </strong>Zenia, 4th Floor, Hiranandani
-                  Circle, Hiranandani Business Park, Thane, Mumbai - 400 608
+                  <strong>Address: </strong>B/42, Gate N0. 1, Road No. 3,
+                  Transport Nagar, Paki
+                  Patna,
+                  Bihar - 800007
                 </div>
                 <div class="flex-shrink-1 mx-3">
                   <strong>Email Address:</strong> info@delius.in
@@ -755,9 +761,8 @@
                 <h3 class="h2 text-2xl leading-30 my-2 font-medium">
                   Delius Pharmaceuticals Pvt. Ltd.
                 </h3>
-                <a href="https://www.google.com/maps/place/Oberoi+Garden+Estates/@19.1129689,72.8910627,16z/data=!4m9!1m2!2m1!1sOberoi+Garden+Estates,+Chandivali+Andheri+(E)+Mumbai-+400072!3m5!1s0x3be7c80b923706b5:0xf474777c8b4e46e5!8m2!3d19.1143639!4d72.8942241!15sCjxPYmVyb2kgR2FyZGVuIEVzdGF0ZXMsIENoYW5kaXZhbGkgQW5kaGVyaSAoRSkgTXVtYmFpLSA0MDAwNzJaOiI4b2Jlcm9pIGdhcmRlbiBlc3RhdGVzIGNoYW5kaXZhbGkgYW5kaGVyaSBlIG11bWJhaSA0MDAwNzKSAQ1idXNpbmVzc19wYXJrmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU56TVU1VFpVcEJFQUU"
-                  target="_blank">
-                  <img src="./assets/img/map.png" alt="" /></a>
+                
+                  <img src="./assets/img/map.png" alt="" />
               </div>
             </div>
             <hr />
@@ -796,9 +801,8 @@
                 <h3 class="h2 text-2xl font-medium leading-30 my-2">
                   Delius Pharmaceuticals Inc.
                 </h3>
-                <a href="https://www.google.com/maps/place/Tillomed+Laboratories+Ltd./@51.9128283,-0.3899912,17z/data=!3m1!4b1!4m5!3m4!1s0x4877c5e0f7bedc77:0x2f1bc9d3e4bdcfce!8m2!3d51.912851!4d-0.3876675"
-                  target="_blank">
-                  <img src="./assets/img/map.png" alt="" /></a>
+                
+                  <img src="./assets/img/map.png" alt="" />
               </div>
             </div>
             <hr />
@@ -878,7 +882,7 @@
             <div class="contact__card">
               <i class="uil uil-envelope-edit contact__card-icon"></i>
               <h3 class="contact__card-title">Email</h3>
-              <span class="contact__card-data">info@delius.in</span>
+              <a href="mailto:info@delius.in"><span class="contact__card-data">info@delius.in</span></a>
               <span class="contact__button">
                 Write us <i class="uil uil-arrow-right contact__button-icon"></i>
               </span>
@@ -889,7 +893,7 @@
             <div class="contact__card">
               <i class="uil uil-whatsapp contact__card-icon"></i>
               <h3 class="contact__card-title">Whatsapp</h3>
-              <span class="contact__card-data">+91 7209774183</span>
+              <a href="https://api.whatsapp.com/send?phone=917209774183"><span class="contact__card-data">+91 7209774183</span></a>
               <span class="contact__button">
                 Write us <i class="uil uil-arrow-right contact__button-icon"></i>
               </span>
@@ -898,9 +902,9 @@
 
           <div class="contact__info">
             <div class="contact__card">
-              <i class="uil uil-facebook-messenger contact__card-icon"></i>
-              <h3 class="contact__card-title">Messenger</h3>
-              <span class="contact__card-data">user.deliuspharmaceutical</span>
+              <i class="uil uil-phone contact__card-icon"></i>
+              <h3 class="contact__card-title">Call Us</h3>
+              <a href="tel:+917209774183"><span class="contact__card-data">+91 72997 74183</span></a>
               <span class="contact__button">
                 Write us <i class="uil uil-arrow-right contact__button-icon"></i>
               </span>
@@ -1001,9 +1005,12 @@
               <div class="single-cta">
                 <i class="fas fa-map-marker-alt"></i>
                 <div class="cta-text">
-                  <h4>Find Us</h4>
-                  <span>Unit 370, Vegas Mall, Sector-14 <br />Dwarka, New
-                    Delhi-110078</span>
+<a href="https://www.google.com/maps/place/Delius+Pharmaceuticals+Pvt+Ltd/@28.6007461,77.0269966,17z/data=!3m1!4b1!4m6!3m5!1s0x39ed588e2e70717d:0xe1cceff4ae5b6935!8m2!3d28.6007461!4d77.0295715!16s%2Fg%2F11c2ppl9x0?entry=ttu"
+target="_blank">
+  <h4>Find Us</h4>
+  <span>Unit 370, Vegas Mall, Sector-14 <br />Dwarka, New
+    Delhi-110078</span>
+</a>
                 </div>
               </div>
             </div>
@@ -1011,8 +1018,8 @@
               <div class="single-cta">
                 <i class="fas fa-phone"></i>
                 <div class="cta-text">
-                  <h4>Call Us</h4>
-                  <span>+91 7209774183</span>
+<a href="tel:+917209774183">                  <h4>Call Us</h4>
+  <span>+91 7209774183</span></a>
                 </div>
               </div>
             </div>
@@ -1020,8 +1027,10 @@
               <div class="single-cta">
                 <i class="far fa-envelope-open"></i>
                 <div class="cta-text">
-                  <h4>Mail Us</h4>
-                  <span>delius@info.com</span>
+<a href="mailto:info@delius.in">
+  <h4>Write to us at</h4>
+  <span>info@delius.in</span>
+</a>
                 </div>
               </div>
             </div>
@@ -1046,7 +1055,7 @@
                   <a href="https://www.facebook.com/deliuspharmaceutical/"><i
                       class="fab fa-facebook-f facebook-bg"></i></a>
                   <a href="https://twitter.com/Deliuspharma"><i class="fab fa-twitter twitter-bg"></i></a>
-                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                  <a href="https://www.instagram.com/deliuspharma/"><i class="fab fa-instagram google-bg"></i></a>
                 </div>
               </div>
             </div>
@@ -1058,14 +1067,14 @@
                 <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">about</a></li>
-                  <li><a href="#">services</a></li>
-                  <li><a href="#">portfolio</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Our Services</a></li>
-                  <li><a href="#">Expert Team</a></li>
-                  <li><a href="#">Contact us</a></li>
-                  <li><a href="#">Latest News</a></li>
+                  <li><a href="#">management</a></li>
+                  <li><a href="#">product</a></li>
+                  <li><a href="#">overview</a></li>
+                  <li><a href="#">heritage</a></li>
+                  <li><a href="#">Expertise</a></li>
+                  <li><a href="#">our Team</a></li>
+                  <li><a href="https://linktr.ee/deliuspharma">Contact us</a></li>
+                  <li><a href="https://www.entrepenuerstories.com/latest/revolutionary-brands-of-delius-pharma-4g-rab-dsr-4g-pan-dsr-have-shaken-the-generic-market/">Latest News</a></li>
                 </ul>
               </div>
             </div>
@@ -1076,17 +1085,16 @@
                 </div>
                 <div class="footer-text mb-25">
                   <p>
-                    If you have any doubts and queries feel free to contact
-                    us.
+                    To report a product query and adverse drug event please reach us at
                   </p>
                 </div>
                 <div class="subscribe-form">
                   <form action="#">
-                    <input type="text" placeholder="Your Email" />
+                    <input type="text" placeholder="info@delius.in" readonly />
                     <button onclick="openGmail()">
                       <i class="fab fa-telegram-plane"></i>
                     </button>
-                  </form>
+                  </form>                  
                 </div>
               </div>
             </div>
@@ -1111,7 +1119,7 @@
                   <li><a href="#">Terms</a></li>
                   <li><a href="#">Privacy</a></li>
                   <li><a href="#">Policy</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Contact Us</a></li>
                 </ul>
               </div>
             </div>

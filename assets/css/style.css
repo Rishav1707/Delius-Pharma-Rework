@@ -313,7 +313,7 @@ input {
 
 /*===== Home Section =====*/
 .home {
-  background: url('../img/buildingLogoMockkk.png');
+  background: url('../img/buildingLogoMockkk.webp');
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -382,7 +382,7 @@ input {
   font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: var(--mb-0-75);
-  color: var(--skin-color);
+  color: hsl(131deg 95.63% 22.82%);
 }
 
 .home__description {
@@ -1312,7 +1312,7 @@ ul {
 }
 
 .google-bg {
-  background: #DD4B39;
+  background: #d62976;
 }
 
 .footer-widget-heading h3 {

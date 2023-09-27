@@ -1,0 +1,33 @@
+1. home section backgroung image size
+2. website stuttering
+3. brochure loading time
+4. logo placement at top will be redone and black margin required
+5. delius pharmaceutical font change (homepage)
+6. animation text color darker, (add one more line)
+7. tgline img on whatsapp placed above brochure
+8. home socials button{total} should redirect
+9. about us (corporate vid instead of img, should redirect to yt and should also play constantly)
+10. remove "description" in abt us with overview and change font of paragraph. remove "ethical and generic" from paragraph
+11. line 2: innovation and well-being of patient
+12. delius generics: "quality medicines" 
+13. delius likhne pr site sabse upar chiye
+14. countries we export in not working
+15. corporate hq - mumbai office
+16. open in google maps(not tapable except for vegas mall)
+17. office locations > registered office(vegas) 
+			- corporate office(mumbai)
+		        - zonal office(in place of other regional) [patna] 
+			- inrternational office (remove inc.)
+18. remove messenger and add call now (should be redirecting all 3 of them and call now par mera number rhega)
+19. test contact us
+20. footer pr write to us at instead of mail us (all 3 buttons should be redirecting in footer)email : info@delius.in
+21. instead of google+ add insta
+22. remove services add management,contact to overview, add linktree in contact us,our services to expertise,instead of portfolio add product,about to heritage, instead of expert team add our team , leatest news ("https://www.entrepenuerstories.com/latest/revolutionary-brands-of-delius-pharma-4g-rab-dsr-4g-pan-dsr-have-shaken-the-generic-market/")
+i
+23. to report a product query and adverse drug event please reach us at info@delius.in
+24. remove typable thing in your main and replace with info@delius.in
+25. contact to contact us
+26. delius brochure spelling  and delius pharmaceutical to pharmaceuticals and remove date
+27. remove contact us and into in footer and pharmaceuticals spelling and add a copyright content line all socails should be redirecting
+28. numbers speak for themselves stutter
+29. use paid google ads to rank 

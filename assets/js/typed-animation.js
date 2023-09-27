@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "The site is under construction.",
       "We will be live soon.",
       "Stay Tuned.",
+      "Thank you for your patience.",
     ],
     typeSpeed: 100,
     backSpeed: 100,
