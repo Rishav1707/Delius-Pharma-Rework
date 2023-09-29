@@ -53,6 +53,36 @@
 <body>
 
 
+
+  <!--===== Popup =====-->
+    <!-- <div class="popup" id="popup">
+        <span class="close-button" id="close-button">&times;</span>
+        <picture>
+          <source media="(max-width: 525px)" srcset="./assets/img/popup_big.png">
+          <img src="./assets/img/popup_small.png" alt="Image Preloader">
+      </picture>
+    </div> -->
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    // Get the popup and close button elements
+    const popup = document.getElementById("popup");
+    const closeButton = document.getElementById("close-button");
+
+    // Show the popup when the page loads
+    popup.style.display = "block";
+
+    // Close the popup when the close button is clicked
+    closeButton.addEventListener("click", function() {
+        popup.style.display = "none";
+    });
+});
+
+    </script>
+
+
+
   <!-- NavBar
 ================================================== -->
   <div id="nav" class="navigation-wrap bg-light start-header start-style">
@@ -101,14 +131,16 @@
     <section class="home" id="home">
       <div class="home__container container grid">
 
-
+        
         <img src="./assets/img/WALL.webp" alt="" class="home__img" />
 
         <div class="home__data">
           <h1 class="home__title">Delius Pharmaceuticals</h1>
           <h3 class="home__subtitle"><span class="multiple-text"></span></h3>
-          <p class="home__description">Caring for you everyday and beyond.</p>
-          <a id="read" href="./brochure_page/Delius-Brochure.html" class="button"><i class="uil uil-book-alt button__icon"></i>
+          <div class="home__description">
+            <img src="./assets/img/tagline.png" alt="Image Description">
+        </div>
+          <a id="read" href="./brochure_page/Delius-Brochure.html" class="button__home"><i class="uil uil-book-alt button__home__icon"></i>
             Brochure &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i
               class="uil uil-arrow-right button__icon"></i>
           </a>
@@ -666,8 +698,7 @@
             <div class="text-lg md:flex my-2 text-primary-heading items-center justify-between">
               <div class="text-lg md:flex my-2 text-primary-heading items-center flex-wrap justify-between">
                 <div class="flex-shrink-1 mx-3">
-                  <strong>Address: </strong>First Floor Manish Metro Plaza-IV
-                  Plot No.4 Pocket-5, Sector-12 Dwarka, New Delhi- 110 075
+                  <strong>Address: </strong>Unit No.370, Vegas Mall Commercial Building Sector-14 Dwarka New Delhi, Delhi, 110078
                 </div>
 
                 <div class="flex-shrink-1 mx-3">
@@ -1130,7 +1161,7 @@ target="_blank">
 
     <script>
       function openGmail() {
-        var receiverEmail = "delius@gmail.com"; // Replace with the receiver's email address
+        var receiverEmail = "info@delius.in"; // Replace with the receiver's email address
 
         // Construct the mailto URL
         var mailtoUrl = "mailto:" + receiverEmail;

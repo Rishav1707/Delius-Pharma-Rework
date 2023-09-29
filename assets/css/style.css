@@ -150,6 +150,43 @@ input {
   color: var(--skin-color);
 }
 
+/* #Popup
+================================================== */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  z-index: 999;
+}
+
+.popup img {
+  max-width: 80%;
+  max-height: 80%;
+  margin: 10% auto;
+  display: block;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Additional CSS for the smaller image (you can adjust styles as needed) */
+@media (max-width: 525px) {
+  .popup img {
+      max-width: 60%; /* Adjust the size for smaller screens */
+  }
+}
+
 
 /* #Navigation
 ================================================== */
@@ -391,6 +428,11 @@ input {
   margin-bottom: var(--mb-2);
 }
 
+.home__description img {
+  width: 60%; /* Set the desired width */
+  height: 60%; /* Set the desired height */
+}
+
 .my__info {
   display: flex;
   column-gap: 1.8rem;
@@ -430,6 +472,19 @@ input {
   z-index: 1;
 }
 
+.button__home{
+  margin-top: 40px;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  background-color: var(--skin-color);
+  color: #fff;
+  padding: .75rem 1.4rem;
+  border-radius: .25rem;
+  font-weight: var(--font-medium);
+  position: relative;
+  z-index: 1;
+}
 .button::after {
   position: absolute;
   content: '';
@@ -451,6 +506,10 @@ input {
 
 .button__icon {
   font-size: 1.25rem;
+}
+
+.button__home {
+  padding: 0.5rem 2.3rem; /* Adjust the padding for smaller screens */
 }
 
 /*===== About Section =====*/
@@ -4199,7 +4258,20 @@ img:hover {
   }
 
   .home__title {
-    font-size: 4.5rem;
+    font-size: 3.8rem;
+  }
+
+  .home__subtitle{
+    font-size: 2rem;
+  }
+
+  .button {
+    margin-top: 30px;
+    padding: 0.5rem 1.2rem; /* Adjust the padding for smaller screens */
+  }
+
+  .button__icon {
+    font-size: 1rem; /* Adjust the icon size for smaller screens */
   }
 
   .footer-section {
@@ -4215,6 +4287,11 @@ img:hover {
   .about__container {
     column-gap: 2.5rem;
   }
+  .home__description img {
+    width: 50%; /* Set the desired width */
+    height: 50%; /* Set the desired height */
+  }
+  
 
   .about__description {
     padding-right: 0;
@@ -4232,6 +4309,12 @@ img:hover {
     margin-right: var(--mb-1-5);
   }
 
+  .home__description img {
+    width: 45%; /* Set the desired width */
+    height: 45%; /* Set the desired height */
+  }
+  
+
   .home__title {
     font-size: 3.5rem;
   }
@@ -4242,6 +4325,15 @@ img:hover {
 
   .home__subtitle {
     font-size: 2rem;
+  }
+
+  .button__home {
+    margin-top: 20px;
+    padding: 0.5rem 0.8rem; /* Adjust the padding for smaller screens */
+  }
+
+  .button__home__icon {
+    font-size: 1rem; /* Adjust the icon size for smaller screens */
   }
 
   .box {
@@ -4412,6 +4504,8 @@ img:hover {
   }
 
   .home__title {
+    line-height: 0.9;
+    margin-bottom: 6px;
     font-size: 3.5rem;
   }
 
@@ -4419,6 +4513,21 @@ img:hover {
     font-size: 1.4rem;
   }
 
+  .home__data{
+    margin: 140px 0px 0px 32px;
+  }
+
+  .button__home{
+    margin-top: 40px;
+  }
+
+  .button__home {
+    padding: 0.5rem .8rem; /* Adjust the padding for smaller screens */
+  }
+
+  .button__home__icon {
+    font-size: 1rem; /* Adjust the icon size for smaller screens */
+  }
   .swiper-wrapper {
     height: 26rem
   }
@@ -4662,17 +4771,41 @@ img:hover {
     padding: 4.5rem 0 2rem;
   }
 
+  @font-face {
+    font-family: "Calendas_Plus"; /* Replace with a suitable font name */
+    src: url('../fonts/Calendas_Plus/Calendas_Plus.otf') format('opentype');
+    /* You may need to adjust the path based on your project structure */
+}
   .home__title {
-    font-size: 3rem;
+    font-weight: 3100;
+    margin-top: 80px;
+    font-size: 2.7rem;
   }
 
+  .home__subtitle{
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .button__home{
+    position: fixed;
+    margin-top: 280px;
+  }
+
+  .button__home {
+    padding: 0.5rem 1rem; /* Adjust the padding for smaller screens */
+  }
+
+  .button__home__icon {
+    font-size: 1.2rem; /* Adjust the icon size for smaller screens */
+  }
   .home__data {
     margin-left: 10px;
     margin-top: 0;
   }
 
   .home__description {
-    display: none;
+display: none;
   }
 
   .qualification__container {
@@ -4695,6 +4828,17 @@ img:hover {
     margin-left: 0.6rem;
   }
 
+  .home {
+    background-image: url("../img/wall2.png.jpg");
+    
+    
+    height: 100vh;
+  }
+
+
+
+
+/* 
   .home__img {
     padding: 5px;
     display: block;
@@ -4705,13 +4849,13 @@ img:hover {
   }
 
   .home__img img {
-    border-radius: .75rem;
+    border-radius: .75rem; */
     /* Rounded corners for the image */
-    width: 100%;
+    /* width: 100%; */
     /* Ensure the image fills the container */
-    height: auto;
+    /* height: auto; */
     /* Maintain aspect ratio */
-  }
+  /* } */
 
   .home__social {
     left: initial;
@@ -4826,10 +4970,30 @@ img:hover {
 @media screen and (max-width: 425px) {
 
   .home__title {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
+  }
+
+  .home__subtitle {
+    font-size: 1.2rem;
+  }
+  .home{
+    position: relative;
   }
 
 
+  .button__home{
+    margin-top: 330px;
+    position: sticky;
+    bottom: 0;
+  }
+
+  .button__home {
+    padding: 0.5rem 0.2rem; /* Adjust the padding for smaller screens */
+  }
+
+  .button__home__icon {
+    font-size: 1rem; /* Adjust the icon size for smaller screens */
+  }
   .text-2xl {
     font-size: 1.11rem;
   }
@@ -4862,7 +5026,8 @@ img:hover {
   }
 
   .home__title {
-    font-size: 2.2rem;
+    margin-top: 60px;
+    font-size: 2.4rem;
     /* Adjust the font size as needed */
     text-align: left;
     /* Align the text to the left */
@@ -4876,6 +5041,15 @@ img:hover {
     font-size: 18px;
   }
 
+
+  .button__home {
+    margin-top: 350px;
+    padding: 0.3rem 0.1rem; /* Adjust the padding for smaller screens */
+  }
+
+  .button__home__icon {
+    font-size: 1.2rem; /* Adjust the icon size for smaller screens */
+  }
   .navbar-light .navbar-toggler-icon {
     width: 24px;
     height: 17px;
